@@ -1,0 +1,99 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "Personas";
+	title NESTLÉ®
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="NESTLÉ®" )
+
+
+block content
+	//Contenido interna propositos
+	div#proposito-personas
+		a.btn.btn-back(href="#") &lt; Regresar
+		
+		h3 Mejorando tu calidad de vida.
+
+
+		div.container-fluid.container-general
+			div.row
+
+				div.section.section-a
+
+					p.bubble.bubble-a
+						| Ofrecemos opciones más 
+						strong saludables y sabrosas
+
+					p.bubble.bubble-b
+						| Todas nuestras leches en polvo y alimentos lácteos destinados a niños entre 3 y 12 años son fortiﬁcadas.
+						
+
+				div.section.section-b
+
+					p.bubble.bubble-c
+						| Construimos, compartimos y aplicamos
+						strong conocimiento nutricional
+
+					p.bubble.bubble-d
+						| Capacitamos a
+						span.number 3.626
+						| profesionales de la salud acerca de los beneﬁcios de la leche materna para que estimulen la lactancia natural en las madres.
+
+
+				div.section.section-c
+					
+					p.bubble.bubble-e Inspiramos a personas a llevar un estilo de vida más saludable.
+
+					div.bubble.bubble-f
+						p.intro Orientamos nutricionalmente a
+						+image('105.png', '105 mil niños')(class="number")
+
+						p
+							| y cerca de 20.000 padres de familia 
+							strong www.unidosporninossaludables.com
+
+						p Trabajamos de la mano de aliados con objetivos aﬁnes, como:  
+
+
+					p.text-right
+						| Por medio de la iniciativa: 
+						strong Unidos por Niños Saludables   
+						| promocionamos la adopción de hábitos de vida saludable y estilos de 
+						strong vida activa en niños de 5 a 12 años,     
+						| a través del juego.
+
+
+
+					div.bubble.bubble-g
+						ul
+							li Secretaria de Educación del Distrito
+							li Asociación Colombiana de Pediatría
+							li Fundación Colombiana del Corazón
+							li Corporación Juego y Niñez
+							li Señal Colombia
+							li Discovery
+
+
+				div.section.section-d
+					p.bubble.bubble-h
+						| Con la   
+						strong Copa MILO&reg;       
+						| y la alianza con el   
+						strong FC Barcelona  
+						| hemos contribuido a la formación de   
+						strong promesas del deporte colombiano
+
+
+					p.text-close
+						| Promoviendo    
+						strong hábitos de vida saludable    
+						| y espacios de sana competencia.
+
+
+
+
+	///-Contenido interna propositos

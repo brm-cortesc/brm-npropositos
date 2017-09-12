@@ -72,6 +72,245 @@
 			
 		
 
+
+#proposito-personas
+	color #fff
+	margin 0 auto
+	max-width $SiteWidth
+	padding-bottom 10px
+	position relative
+	
+	h3
+		color $Gris
+		font-size 20px
+		font-weight $Light
+		padding-bottom 20px
+		padding-left 7px
+		position relative
+		z-index 1
+		
+		&::after
+			background-color $Azul[2]
+			border-radius 70%/40%
+			bottom -30px
+			content ''
+			display block
+			height 30px
+			left 10px
+			max-width 96.6%
+			pointer-events none
+			position absolute
+			width 100%
+			z-index -1
+			
+		&::before
+			path('pilares-icon-color.png')
+			background-repeat no-repeat
+			background-size 100%
+			bottom -20px
+			content ''
+			cuadrado(100px)
+			position absolute
+			pointer-events none
+			right 0
+			z-index 2
+			
+
+	p
+		margin 0
+	
+	.bubble
+		background-repeat no-repeat
+		background-size 100%
+		position absolute
+		transitionBase()
+
+		&-a
+			path('bubbles-persona-01.png')
+			padding 60px 20px
+			right 70px
+			top 5px
+			width 220px
+
+		&-b
+			path('bubbles-persona-02.png')
+			padding 63px 16px
+			right 38px
+			text-align right
+			top 215px
+			width 266px
+			
+
+		&-c
+			path('bubbles-persona-03.png')
+			left 36px
+			padding 60px 30px
+			top 120px
+			width 250px
+			
+		&-d
+			path('bubbles-persona-03.png')
+			bottom 0
+			left 76px
+			padding 60px 23px
+			width 324px
+			
+			.number
+				display block
+				font-size 40px
+				font-weight $Bold
+				line-height 0.8
+				
+
+		&-e
+			path('bubbles-persona-04.png')
+			left 86px
+			padding 49px 32px
+			text-align right
+			top 177px
+			width 230px
+			
+			&::before
+				path('persona-linea-02.png')
+				content ''
+				display block
+				height 216px
+				left -49px
+				pointer-events none
+				position absolute
+				top -26px
+				width: 69px
+				z-index 2
+				
+		&-f
+			path('bubbles-persona-05.png')
+			left 18px
+			padding 60px 40px
+			top 355px
+			width 358px
+			
+			p:nth-of-type(3)
+				margin-top 30px
+
+			.intro,
+			.number
+				display inline-block
+				max-width 45%
+				vertical-align top
+			
+			.intro
+				text-align right
+				
+		&-g
+			path('bubbles-persona-06.png')
+			left 76px
+			padding 23px 27px
+			top 580px
+			width 350px
+			z-index 3
+			
+			ul
+				list-style-image none
+				
+				li
+					font-size 16px
+					// list-style-image url('../images/bullet.png')
+					list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet.png')
+					margin 5px auto
+					
+		&-h
+			path('bubbles-persona-07.png')
+			bottom 99px
+			left 25px
+			padding 80px 30px
+			width 307px
+			
+			&::after
+				path('persona-linea-03.png')
+				background-repeat no-repeat
+				background-size 100%
+				bottom -47px
+				content ''
+				display block
+				height 160px
+				pointer-events none
+				position absolute
+				right -140px
+				width 360px
+				z-index 2
+					
+					
+
+
+		
+	.section
+		background-position center
+		background-repeat no-repeat
+		color #fff
+		margin 0 auto
+		position relative
+		transitionBase()
+		
+		&-a,
+		&-b
+			background-color $Azul[2]
+		&-a
+			path('bg-personas-01.png')
+			padding-bottom 30px
+			min-height 443px
+			padding-top 10px
+			
+		&-b
+			path('bg-personas-02.png')
+			background-position center top
+			min-height 535px
+			
+			&::before
+				path('persona-linea-01.png')
+				background-repeat no-repeat
+				background-size 100%
+				bottom 17px
+				content ' '
+				display block
+				height 392px
+				left 26px
+				pointer-events none
+				position absolute
+				width 74px
+				
+		
+		&-c,
+		&-d
+			background-color $Azul[0]
+			
+		&-c
+			path('bg-personas-03.png')
+			background-position center 32px
+			min-height 788px
+			z-index 2
+			
+
+			.text-right
+				position absolute
+				right 42px
+				text-align right
+				top 449px
+				width 170px
+			
+		&-d
+			path('bg-personas-04.png')
+			background-position center top
+			min-height 640px
+			
+			.text-close
+				bottom 47px
+				position absolute
+				right 45px
+				text-align right
+				width 240px
+
+
+
 .hashtag
 	path('hashtag.png')
 	background-repeat no-repeat
@@ -123,8 +362,6 @@
 	
 
 	&-desc
-		// list-style-image url('../images/bullet-home.png')
-		list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet-home.png')
 		font-size 14px
 		line-height 1
 		text-align justify
@@ -132,13 +369,18 @@
 		
 
 		li
+			// list-style-image url('../images/bullet-home.png')
+			list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet-home.png')
 			margin 10px auto 20px
 			
 		
 		ul
 			list-style-type none
 			list-style-image none
-		
+			
+			li
+				list-style-image none
+
 
 	&-title
 		font-size 14px
@@ -146,10 +388,11 @@
 		padding-left 50px
 		
 		li
+			list-style-image none
 			margin 10px auto 20px
 			padding 10px
 			position relative
-			position relative
+			
 
 			
 			&:nth-of-type(1)
