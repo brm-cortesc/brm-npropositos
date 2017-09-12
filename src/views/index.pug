@@ -1,0 +1,96 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "Home";
+	title NESTLÉ®
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="NESTLÉ®" )
+
+
+block content
+	//Contenido interna propositos
+	div#proposito-home
+
+		div.container-fluid
+			div.row
+				//Logo
+				h2.logo
+					+image('logo-nestle.png', 'NESTLÉ®')
+				///-Logo
+
+				div.section.section-intro
+					p.bubble.bubble-a Guiados por nuestros valores, enfocados en la nutrición, entendiendo los gustos y necesidades de nuestros consumidores:
+
+					p.bubble.bubble-b
+						| Hemos ratiﬁcado nuestro propósito:
+						strong Mejorar la calidad de vida y contribuir a un futuro más saludable para las familias, las comunidades y el planeta.
+
+
+
+			div.row.row-content
+				p.text-center Nuestra manera de asegurar el éxito a largo plazo es creando valor compartido:
+
+
+				// Intro Pilares
+				div.col-text
+					ul.pilar-desc
+
+						li Generando valor a los accionistas, proveedores y así mismo, a nuestros clientes, consumidores y a las comunidades donde operamos.
+
+						li Desde hace más de 70 años en Colombia, nos hemos enfocado en la Creación de Valor Compartido bajo estos pilares:
+
+						li
+							| Velar por la nutrición, apoyar el desarrollo rural, promover el empleo juvenil y proteger el agua.
+
+							ul
+								li Velar por la nutrición, apoyar el desarrollo rural, promover el empleo juvenil y proteger el agua.
+
+				///- Intro Pilares
+
+				div.col-text
+					ul.pilar-title
+						li.pilar-personas
+							| Velar por la nutrición
+						li.pilar-comunidad
+							| Apoyar el desarrollo rural
+						li.pilar-comunidad
+							| Promover el empleo juvenil 
+						li.pilar-planeta
+							| Proteger el agua
+
+				div.clearfix
+
+				
+				//hashtag
+				div.hashtag.hashtag-light
+				///-hashtag
+
+			div.row
+				div.col-pilar.pilar.pilar-personas
+
+					div.container-color
+						h2 Personas y familias
+
+						a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-familia") Conoce más aquí
+						//- a.btn.btn-white(href="#") Conoce más aquí
+
+				div.col-pilar.pilar.pilar-comunidades
+
+					div.container-color
+						h2 Comunidades
+						a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-comunidades") Conoce más aquí
+						//- a.btn.btn-white(href="#") Conoce más aquí
+				div.col-pilar.pilar.pilar-planeta
+
+					div.container-color
+						h2 Planeta
+
+						a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-planeta") Conoce más aquí
+						//- a.btn.btn-white(href="#") Conoce más aquí
+
+
+	///-Contenido interna propositos

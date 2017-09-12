@@ -1,0 +1,21 @@
+//Menu
+div.menu
+	button.menu-toggle
+		div.icon
+			i.icon-bar
+			i.icon-bar
+			i.icon-bar
+		span Menú
+		
+	nav
+		ul.menu
+
+			li(class={active: titulo == "Comprar"}): a(href="fiesta.html") Compra tu Chivas Home Party
+			li(class={active: titulo == "FAQ"}): a(href="faq.html") Preguntas y Respuestas
+			li(class={active: titulo == "Terminos"}): a(href="terminos.html") Términos &amp; Condiciones
+			li(class={active: titulo == "Politica"}): a(href="files/tratamiento-de-datos-personales-pernod-ricard.pdf", target="_blank") Política de uso de datos
+
+
+	a.btn.btn-reservar(href="fiesta.html", role="button") Reservar
+
+///-Menu

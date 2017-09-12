@@ -1,0 +1,24 @@
+//path images
+path(img)
+	background-image url("../images/"+img)
+
+transitionBase(el = all ,tiempo = 0.3s, curve = ease-in-out)
+	transition el tiempo curve
+
+cuadrado()
+	height arguments
+	width arguments
+
+circ()
+	border-radius 100%
+	cuadrado arguments
+
+//Soporte de propiedad calc en todos los navegadores modernos
+calc()
+	arguments = unquote(arguments)
+	vendor-prefixes = o ms webkit moz
+
+	for pre in vendor-prefixes
+		add-property(current-property[0], s('-%s-calc(%s)', pre, arguments) )
+
+	s('calc(%s)', arguments)
