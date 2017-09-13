@@ -95,11 +95,97 @@
 			
 	#proposito-personas
 		.bubble
+			max-width 95%
+			&-d,
+			&-e,
+			&-f,
 			&-g
-				left 28px
+				left 10px
+				
+			&-e
+				&::before
+					content none
 				
 			&-h
 				&::after
-					bottom -77px
-					right -80px
+					content none
+
+@media (max-width:420px)
+	#proposito-personas
+		.bubble
+			&-d,
+			&-e,
+			&-f,
+			&-g
+				left 2px
+			&-f
+				background-color rgba($Azul[2], 0.6)
+				background-image none
+				border-radius 30%
+				padding 61px 9px
+				text-align center
+				
+				p
+					&:nth-of-type(3)
+						margin-top 5px
+				
+			&-g
+				background-color rgba( lighten($Azul[0], 20%) , 0.6)
+				background-image none
+				border-radius 30%
+				padding 44px 20px
+				ul
+					li
+						font-size 14px 
+
+			&-h
+				left 5px
+
+@media (max-width:390px)
+	#proposito-personas
+		h3
+			&::before
+				bottom -30px
+				cuadrado(50px)
+
+		.bubble				
+			&-a
+				left 2px
+			&-b
+				right 2px
+			&-c
+				left 2px
+			&-d
+				background-color rgba( lighten($Azul[0], 20%) , 0.6)
+				background-image none
+				border-radius 30%
+				bottom 15px
+				padding 42px 23px
+				
+			&-f
+				.intro
+					display block
+					margin 0 auto
+					text-align center
+					max-width 100%
+			&-h
+				bottom 150px
+				padding 66px 30px
+				
+		.section
+			&-b
+				min-height 615px
+				
+			&-c
+				min-height 1040px
+			
+				.text-right
+					bottom 20px
+					right 10px
+					
+@media (max-width:350px)
+	#proposito-personas
+		.bubble
+			&-h
+				padding 66px 30px
 

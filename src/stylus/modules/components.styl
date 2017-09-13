@@ -1,3 +1,205 @@
+#proposito-comunidades
+	color #fff
+	margin 0 auto
+	max-width $SiteWidth
+	padding-bottom 10px
+	position relative
+	
+	h3
+		color $Gris
+		font-size 20px
+		font-weight $Light
+		padding-bottom 20px
+		padding-left 7px
+		position relative
+		z-index 1
+		
+		&::after
+			background-color #f48232
+			border-radius 70%/40%
+			bottom -30px
+			content ''
+			display block
+			height 30px
+			left 10px
+			max-width 96.6%
+			pointer-events none
+			position absolute
+			width 100%
+			z-index -1
+			
+		&::before
+			path('pilares-icon-color.png')
+			background-position 0 50%
+			background-repeat no-repeat
+			background-size 100%
+			bottom -40px
+			content ''
+			cuadrado(100px)
+			position absolute
+			pointer-events none
+			right 0
+			z-index 2
+			
+
+	p
+		margin 0
+			
+	.bubble
+		background-repeat no-repeat
+		background-size 100%
+		position absolute
+		transitionBase()
+		&-a
+			path('bubbles-comunidad-01.png')
+			left 90px
+			padding 60px 30px
+			top 10px
+			width 255px
+		
+		&-b
+			path('bubbles-comunidad-02.png')
+			bottom 58px
+			right 17px
+			padding 72px 56px
+			width 390px
+			
+			ul
+				list-style-image none
+				
+				li
+					// list-style-image url('../images/bullet.png')
+					list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet.png')
+			
+		&-c
+			path('bubbles-comunidad-03.png')
+			left 26px
+			padding 60px 30px
+			top 40px
+			width 273px
+			
+		&-d
+			path('bubbles-comunidad-04.png')
+			padding 48px 23px
+			right 40px
+			text-align center
+			top 380px
+			width 180px
+			
+		&-e
+			path('bubbles-comunidad-05.png')
+			left 9px
+			padding 63px 60px
+			top 447px
+			width 314px
+			
+			.number
+				display block
+				font-size 50px
+				font-weight $Bold
+				line-height 0.9
+				text-transform uppercase
+				
+			.text-sub
+				display block
+				font-size 18px
+				font-weight $Bold
+				text-transform uppercase
+				
+
+		&-f
+			path('bubbles-comunidad-06.png')
+			padding 80px 48px
+			right 10px
+			text-align right
+			top 607px
+			width 400px
+			
+			.highlight
+				display block
+				font-size 20px
+				font-weight $Bold
+				text-transform uppercase
+				
+
+		&-g
+			path('bubbles-comunidad-07.png')
+			left 18px
+			padding 44px 26px
+			top 10px
+			width 165px
+		
+
+		&-h
+			path('bubbles-comunidad-08.png')
+			left 10px
+			line-height 1.1
+			padding 72px 60px
+			top 300px
+			width 340px
+			
+			.highlight
+				display block
+				font-size 40px
+				font-weight $Bold
+				text-align center
+				text-transform uppercase
+				
+		&-i
+			path('bubbles-comunidad-08.png')
+			bottom 50px
+			padding 29px 48px
+			right 10px
+			width 376px
+			
+			p
+				text-align center
+			ul
+				list-style-image none
+				
+				
+				li
+					// list-style-image url('../images/bullet.png')
+					list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet.png')
+					margin 5px 0
+				
+				
+				
+
+	.section
+		&-a
+			background-color #f48232
+			path('bg-comunidad-01.png')
+			background-position 33% 50%
+			background-repeat no-repeat
+			min-height 993px
+			padding-top 200px
+			
+			.text-right
+				margin 0 auto
+				text-align right
+				width 450px
+			
+		&-b,
+		&-c
+			background-color #f59c3e
+			
+		&-b
+			path('bg-comunidad-02.png')
+			background-position 50% 22%
+			min-height 850px
+			z-index 3
+			
+		&-c
+			path('bg-comunidad-03.png')
+			background-position 20% -50%
+			min-height 1000px
+			z-index 2
+			
+
+
+	
+
 #proposito-home
 	path('bg-home.jpg')
 	background-position center top
@@ -214,8 +416,8 @@
 				
 				li
 					font-size 16px
-					list-style-image url('../images/bullet.png')
-					// list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet.png')
+					// list-style-image url('../images/bullet.png')
+					list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet.png')
 					margin 5px auto
 					
 		&-h
@@ -244,12 +446,7 @@
 
 		
 	.section
-		background-position center
-		background-repeat no-repeat
-		color #fff
-		margin 0 auto
-		position relative
-		transitionBase()
+		
 		
 		&-a,
 		&-b
@@ -311,6 +508,154 @@
 
 
 
+#proposito-planeta
+	color #fff
+	margin 0 auto
+	max-width $SiteWidth
+	padding-bottom 10px
+	position relative
+	
+	h3
+		color $Gris
+		font-size 20px
+		font-weight $Light
+		padding-bottom 20px
+		padding-left 7px
+		position relative
+		z-index 1
+		
+		&::after
+			background-color #5dab49
+			border-radius 70%/40%
+			bottom -30px
+			content ''
+			display block
+			height 30px
+			left 10px
+			max-width 96.6%
+			pointer-events none
+			position absolute
+			width 100%
+			z-index -1
+			
+		&::before
+			path('pilares-icon-color.png')
+			background-position 0 100%
+			background-repeat no-repeat
+			background-size 100%
+			bottom -26px
+			content ''
+			cuadrado(100px)
+			position absolute
+			pointer-events none
+			right 0
+			z-index 2
+			
+
+	p
+		margin 0
+			
+	.bubble
+		background-repeat no-repeat
+		background-size 100%
+		position absolute
+		transitionBase()
+		
+		&-a
+			path('bubbles-planeta-01.png')
+			padding 80px 50px
+			right 5px
+			text-align right
+			top -60px
+			width 267px
+			
+		&-b
+			path('bubbles-planeta-03.png')
+			left 62px
+			padding 45px 40px
+			width 160px
+			
+		&-c
+			path('bubbles-planeta-04.png')
+			padding 47px 33px
+			right 71px
+			text-align right
+			top 236px
+			width 180px
+			
+
+		&-list
+			path('bubbles-planeta-05.png')
+			background-repeat no-repeat
+			padding 120px 82px
+			margin 30px 0 0
+			width 414px
+			li
+				// list-style-image url('../images/bullet.png')
+				list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet.png')
+				margin 5px 0 0
+
+	.section
+		&-a,
+		&-b
+			background-color #5dab49
+			
+		&-c,
+		&-d
+			background-color #6ab859
+
+		&-a
+			min-height 454px
+			padding-bottom 10px
+			padding-top @padding-bottom
+			
+			img
+				img-responsive(block)
+				margin 1rem auto 0
+				max-width 526px
+
+			.text-intro
+				margin 10px auto 50px
+				max-width 458px
+				width 100%
+		&-b
+			path('bg-planeta-02.png')
+			background-position center top
+			min-height 473px
+			
+		&-c
+			path('bg-planeta-03.png')
+			background-position 50% 10%
+			min-height 590px
+			padding-top 260px
+
+			img
+				img-responsive(block)
+				margin-left 14px
+				max-width 230px
+				
+
+			.text-right
+				text-align right
+				margin -50px auto 0
+				max-width 508px
+				
+				p
+					margin 0
+					&:nth-of-type(1)
+						margin-left 248px
+						max-width 260px
+						
+		&-d
+			path('bg-planeta-04.png')
+			background-position 50% 0
+			min-height 980px
+			
+			.text-center
+				margin 0 auto
+				max-width 500px
+				padding-top 400px
+
 .hashtag
 	path('hashtag.png')
 	background-repeat no-repeat
@@ -369,8 +714,8 @@
 		
 
 		li
-			list-style-image url('../images/bullet-home.png')
-			// list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet-home.png')
+			// list-style-image url('../images/bullet-home.png')
+			list-style-image url('/asset-library/PublishingImages/feature/propositos/infografia/bullet-home.png')
 			margin 10px auto 20px
 			
 		
@@ -472,6 +817,11 @@
 					color white
 					
 
-// .section
-// 	&-intro
+.section
+	background-position center
+	background-repeat no-repeat
+	color #fff
+	margin 0 auto
+	position relative
+	transitionBase()
 		

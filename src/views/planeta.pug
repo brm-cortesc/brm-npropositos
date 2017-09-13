@@ -1,0 +1,101 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "Planeta";
+	title NESTLÉ®
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="NESTLÉ®" )
+
+
+block content
+	//Contenido interna propositos
+	div#proposito-planeta
+		a.btn.btn-back(href="#") &lt; Regresar
+		
+		h3 Un planeta mejor y más saludable es nuestro objetivo.
+
+
+		div.container-fluid.container-general
+			div.row
+				div.section.section-a
+					p.text-intro.text-center.
+						Hicimos una <strong>alianza público-privada</strong> con la <strong>Federación Nacional de Cafeteros</strong>, por medio de la cual buscamos implementar un <strong>Sistema de Gestión Integral de Agua</strong> en el proceso de siembra de café en diversos sectores del país
+
+					+image('bg-planeta-01.png', 'Planeta')
+
+				div.section.section-b
+					p.bubble.bubble-a.
+						El objetivo de nuestra alianza es <strong>generar un programa integral de agua que contribuya a enfrentar los desafíos</strong> que se presentan en cuanto a temas hídricos para el sector cafetero y su cadena de valor.
+				                            
+
+				div.section.section-c
+					+image('bubbles-planeta-02.png', 'Impactamos a más 11 mil familias cafeteras')
+
+					div.text-right
+						p.
+							En 25 microcuencas de Antiquia, Caldas, Cauca, Nariño y Valle del Cauca, <strong>promoviendo</strong>
+
+
+						p.
+							<strong>la transferencia de tecnologías</strong> apropiadas para el buen uso del agua y el manejo de la contaminación en las ficas cafeteras, al tiempo que <strong>aplicamos técnicas de bioningeniería</strong> (manejo de suelos) y reforestación para estabiliar los ecosistemas de las microcuencas.
+
+
+				div.section.section-d
+					p.bubble.bubble-b
+						| Gestión 
+						strong ambiental
+
+					p.bubble.bubble-c.
+						Ojbetivos de Desarrollo Sostenible (ODS)
+
+
+					p.text-center.
+						<strong>La gestión ambiental en nuestras operaciones</strong> ha mostrado resultados contundentes con respecto a los compromisos de <strong>Desarrollo Sostenible</strong> pactados con la <strong>ONU</strong> en el 2011. Durante el 2017 hemos excedido gran parte de las metas que nos propusimos alcanzar para el 2020.
+
+
+					ul.bubble-list
+						li.
+							<strong>Disminuimos en un 51%</strong> el consumo de Agua
+
+						li.
+							Alcanzamos una <strong>reducción de 31%</strong> en el uso de energía
+
+						li.
+							<strong>Redujimos 33%</strong> la generación de <strong>gases de efecto invernadero</strong>
+
+						li.
+							Disminuimos en un <strong>99% las toneladas</strong> de residuos enviados al relleno sanitario
+
+						li.
+							Invertimos más de <strong>3,5 Millones de dólares</strong> en proyectos de eficencia y mejora de procesos
+
+
+
+
+
+
+
+
+			div.row.row-secciones
+				div.container-color
+
+					div.col-pilar.pilar.pilar-personas
+
+						div.container-color
+							h2 Personas y familias
+
+							a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-familia") Conoce más aquí
+							//- a.btn.btn-white(href="personas.html") Conoce más aquí
+					
+					div.col-pilar.pilar.pilar-comunidades
+
+						div.container-color
+							h2 Comunidades
+							a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-comunidades") Conoce más aquí
+							//- a.btn.btn-white(href="#") Conoce más aquí
+
+	///-Contenido interna propositos

@@ -1,0 +1,110 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "Comunidades";
+	title NESTLÉ®
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="NESTLÉ®" )
+
+
+block content
+	//Contenido interna propositos
+	div#proposito-comunidades
+		a.btn.btn-back(href="#") &lt; Regresar
+		
+		h3 Trabajamos por comunidades más prósperas. 
+
+
+		div.container-fluid.container-general
+			div.row
+
+				div.section.section-a
+					p.bubble.bubble-a
+						| Apoyamos la   
+						strong prosperidad y sostenibilidad   
+						| de los caﬁcultores  colombianos
+
+
+					p.text-right
+						| Con el    
+						strong Plan NESCAFÉ&reg;
+						| , desde 2011 en asociación con la Federación Nacional de Cafeteros, hemos contribuido al fortalecimiento de la caficultura del país.
+						
+
+					div.bubble.bubble-b
+						ul
+							li.
+								Ofrecemos apoyo técnico y <strong>capacitación a más de 16.000 cafeteros.</strong>
+
+							li.
+								Entregamos más de <strong>34.8 millones de plantas de alta productividad</strong> y resistencia a plagas entregadas.
+
+							li.
+								Renovamos <strong>5.181 hectáreas de cultivo en 54% de las fincas</strong> de 10 municipios del Valle del Cauca y 5 de Risaralda.
+
+				div.section.section-b
+					p.bubble.bubble-c.
+						Apoyamos a los ganaderos para el <strong>mejoramiento y calidad</strong> de la producción lechera.
+
+					p.bubble.bubble-d.
+						con el <strong>Plan Fomento Lechero:</strong>
+
+					p.bubble.bubble-e.
+						Otorgamos más de <span class="number">6 mil</span> <span class="text-sub">microcréditos</span> de fomento a pequeños y medianos <strong>ganaderos en Cesar y Caquetá</strong>
+
+					p.bubble.bubble-f.
+						Gracias a un acuerdo con el <span class="highlight">Banco Interamericano de Desarrollo (BID)</span> hemos invertido más de USD 1.5 millones para la <strong>reconversión ganadera sostenible</strong> de 100 fincas en Caquetá.
+
+				div.section.section-c
+					p.bubble.bubble-g.
+						<strong>Promovemos</strong> el empleo digno y la diversidad
+
+					p.bubble.bubble-h.
+						Con la <strong>Iniciativa por los Jóvenes NESTLÉ&reg;</strong> bucamos promover el empleo juvenil en Colombia a través de <span class="highlight">4 pilares:</span> Orientación, Entrenamienot, Empleabilidad y más Oportunidades con aliados
+
+
+					div.bubble.bubble-i
+						p: strong Entre 2015 y 2017
+
+						ul
+							li.
+								Generamos má de <strong>470 empleos directos</strong> en NESTLÉ&reg;
+
+							li.
+								Otorgamos más de <strong>400 oportunidades</strong> de entrenamiento
+
+							li.
+								<strong>Preparamos 49 mil jóvenes</strong> en habilidades para conseguir un empleo
+
+							li.
+								<strong>Creamos más de 140 empleos</strong> dentro de nuestra cadena de valor
+
+							li.
+								Realizamos <strong>4 alianzas por la empleabilidad</strong> de los jóvenes
+
+
+
+			div.row.row-secciones
+				div.container-color
+
+					div.col-pilar.pilar.pilar-personas
+
+						div.container-color
+							h2 Personas y familias
+
+							a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-familia") Conoce más aquí
+							//- a.btn.btn-white(href="personas.html") Conoce más aquí
+					
+					div.col-pilar.pilar.pilar-planeta
+
+						div.container-color
+							h2 Planeta
+
+							a.btn.btn-white(href="http://www.corporativa.nestle.com.co/conocenos/proposito-planeta") Conoce más aquí
+							//- a.btn.btn-white(href="#") Conoce más aquí
+
+	///-Contenido interna propositos
