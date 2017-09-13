@@ -1,4 +1,9 @@
 @media (max-width:570px)
+	#proposito-comunidades
+		h3
+			&::before
+				bottom -53px
+
 	#proposito-home
 		
 		p
@@ -37,7 +42,14 @@
 				
 
 	
-
+	#proposito-comunidades,
+	#proposito-planeta
+		h3
+			&::after
+				content none
+	
+	
+				
 	#proposito-personas
 		h3
 			&::after
@@ -76,8 +88,25 @@
 			.btn
 				font-size 18px
 				
+	#proposito-planeta
+		h3
+			padding-right 120px
+			&::before
+				bottom -42px
+				
 
 @media (max-width:510px)
+	#proposito-comunidades
+		.bubble
+			&-f
+				top 647px
+			&-g
+				top 70px
+		.section
+			&-a
+				.text-right
+					padding 10px
+					max-width 100%
 	#proposito-home
 		.bubble
 			background-color rgba($Azul[1], 0.5)
@@ -95,7 +124,6 @@
 			
 	#proposito-personas
 		.bubble
-			max-width 95%
 			&-d,
 			&-e,
 			&-f,
@@ -109,6 +137,72 @@
 			&-h
 				&::after
 					content none
+					
+	#proposito-planeta
+		
+		.bubble-list
+			background-color rgba(#5dab49, .75)
+			background-image none 
+			border-radius 20px
+			margin-left auto 
+			margin-right @margin-left 
+			padding 46px 54px
+		
+		.section-c
+			.text-right
+				margin 10px auto 0
+				padding 10px
+				
+				p
+					&:nth-of-type(1)
+						margin-left 0
+						max-width 100%
+					 				
+	.bubble,
+	.bubble-list
+		max-width 95%
+	
+
+@media (max-width:460px)
+	#proposito-comunidades
+		.bubble
+			&-a
+				left 10px
+			&-b
+				background-color rgba(#f59c3e, 0.7)
+				background-image none
+				border-radius 30%
+				left 5px
+				padding 69px 6px
+				right unset
+			
+			&-e
+				.number
+					font-size 30px
+			
+			&-f
+				background-color rgba(#e87c32, 0.7)
+				background-image none
+				border-radius 20%
+				top 687px
+				padding 49px 28px
+			&-h
+				background-color rgba(#e87c32, 0.7)
+				background-image none
+				border-radius 50%
+				top 260px
+				
+				.highlight
+					font-size 30px
+					text-align left
+			
+			&-i
+				background-color rgba(#e87c32, 0.7)
+				background-image none
+				border-radius 30%
+				left 5px
+				padding 29px 18px
+				right unset
 
 @media (max-width:420px)
 	#proposito-personas
@@ -142,6 +236,27 @@
 				left 5px
 
 @media (max-width:390px)
+	#proposito-comunidades
+		.bubble
+			&-c
+				left 5px
+				top 0
+			&-d
+				top 180px
+			&-e
+				padding 65px 40px
+				top 317px
+			&-f
+				top 600px
+			&-g
+				top 60px
+				
+			&-h
+				border-radius 10%
+				padding 32px 20px
+			&-i
+				border-radius 40px
+
 	#proposito-personas
 		h3
 			&::before
